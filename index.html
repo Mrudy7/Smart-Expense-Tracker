@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Expense Tracker | Control Your Finances</title>
+    <meta name="description" content="Track, analyze, and manage your expenses with smart insights. Build better financial habits starting today.">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 1. Sticky Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i data-lucide="wallet"></i>
+                <span>SmartExpense</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-outline">Log In</a>
+                <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section -->
+    <section class="hero fade-in">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="badge-dot"></span> New: Smart AI Insights
+                </div>
+                <h1>Take Control of Your<br><span class="text-accent">Finances Effortlessly</span></h1>
+                <p>Track, analyze, and manage your expenses with smart insights. Get a clear picture of exactly where your money goes every month.</p>
+                <div class="hero-cta">
+                    <a href="#" class="btn btn-primary btn-lg">Start Tracking Free</a>
+                    <a href="#" class="btn btn-secondary btn-lg">
+                        <i data-lucide="play-circle"></i> View Demo
+                    </a>
+                </div>
+                <div class="social-proof">
+                    <div class="avatars">
+                        <img src="https://i.pravatar.cc/100?img=1" alt="User">
+                        <img src="https://i.pravatar.cc/100?img=2" alt="User">
+                        <img src="https://i.pravatar.cc/100?img=3" alt="User">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual glass-panel">
+                <div class="mockup-header">
+                    <div class="dots"><span></span><span></span><span></span></div>
+                    <div class="mockup-title">dashboard_overview</div>
+                </div>
+                <div class="mockup-body">
+                    <div class="mockup-card balance-card">
+                        <h3>Total Balance</h3>
+                        <h2>$12,450.00</h2>
+                        <span class="trend positive"><i data-lucide="trending-up"></i> +14.5% this month</span>
+                    </div>
+                    <div class="mockup-chart">
+                        <div class="bar-chart">
+                            <div class="bar" style="height: 40%"></div>
+                            <div class="bar" style="height: 60%"></div>
+                            <div class="bar" style="height: 30%"></div>
+                            <div class="bar" style="height: 80%"></div>
+                            <div class="bar active" style="height: 100%"></div>
+                            <div class="bar" style="height: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="mockup-transactions">
+                        <div class="transaction">
+                            <div class="t-icon bg-blue"><i data-lucide="shopping-cart"></i></div>
+                            <div class="t-details"><h4>Groceries</h4><p>Today, 10:45 AM</p></div>
+                            <div class="t-amount negative">-$84.20</div>
+                        </div>
+                        <div class="transaction">
+                            <div class="t-icon bg-green"><i data-lucide="briefcase"></i></div>
+                            <div class="t-details"><h4>Salary</h4><p>Yesterday</p></div>
+                            <div class="t-amount positive">+$4,200.00</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Floating Elements -->
+                <div class="floating-pill float-1">
+                    <i data-lucide="bell"></i> Goal Reached!
+                </div>
+                <div class="floating-pill float-2">
+                    <i data-lucide="pie-chart"></i> New Insight
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Features Section -->
+    <section id="features" class="features section bg-light">
+        <div class="container fade-in">
+            <div class="section-header">
+                <h2>Everything you need to manage wealth</h2>
+                <p>Powerful features designed to give you complete visibility and control over your financial life.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="f-icon"><i data-lucide="activity"></i></div>
+                    <h3>Expense Tracking</h3>
+                    <p>Log daily expenses in seconds. Auto-categorization saves you time and effort.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="f-icon"><i data-lucide="target"></i></div>
+                    <h3>Budget Management</h3>
+                    <p>Set custom budgets for different categories and get alerted before you overspend.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="f-icon"><i data-lucide="zap"></i></div>
+                    <h3>Smart Insights & Analytics</h3>
+                    <p>AI-driven analytics help you identify unwanted subscriptions and areas to save.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="f-icon"><i data-lucide="pie-chart"></i></div>
+                    <h3>Category-wise Spending</h3>
+                    <p>Visualize exactly where your money goes with interactive charts and graphs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="f-icon"><i data-lucide="shield-check"></i></div>
+                    <h3>Secure Data Storage</h3>
+                    <p>Your data is encrypted with bank-level security. We never sell your personal information.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="f-icon"><i data-lucide="smartphone"></i></div>
+                    <h3>Multi-device Sync</h3>
+                    <p>Access your finances on web, iOS, and Android seamlessly in real-time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Dashboard Preview Section -->
+    <section class="dashboard-preview section">
+        <div class="container fade-in">
+            <div class="preview-content">
+                <h2>Crystal clear view of your financial health</h2>
+                <p>No more spreadsheets. Get beautiful, actionable reports that make understanding your money incredibly intuitive.</p>
+                <ul class="benefit-list">
+                    <li><i data-lucide="check-circle-2"></i> Monthly spending graphs</li>
+                    <li><i data-lucide="check-circle-2"></i> Category breakdown pie charts</li>
+                    <li><i data-lucide="check-circle-2"></i> Clean recent transactions list</li>
+                </ul>
+                <a href="#" class="btn btn-outline arrow-btn">Explore Full Dashboard <i data-lucide="arrow-right"></i></a>
+            </div>
+            <div class="preview-image glass-panel">
+                <div class="dashboard-ui">
+                    <div class="sidebar">
+                        <div class="s-item active"><i data-lucide="layout-dashboard"></i> Dashboard</div>
+                        <div class="s-item"><i data-lucide="arrow-right-left"></i> Transactions</div>
+                        <div class="s-item"><i data-lucide="pie-chart"></i> Analytics</div>
+                        <div class="s-item"><i data-lucide="target"></i> Goals</div>
+                    </div>
+                    <div class="main-area">
+                        <div class="top-stats">
+                            <div class="stat-box">Income <br><span>$8,240</span></div>
+                            <div class="stat-box">Expenses <br><span>$3,120</span></div>
+                            <div class="stat-box">Savings <br><span>$5,120</span></div>
+                        </div>
+                        <div class="chart-area flex-center">
+                            <!-- SVG decorative line chart representation -->
+                            <svg viewBox="0 0 100 30" class="smooth-line" preserveAspectRatio="none">
+                                <path d="M0,25 Q10,15 20,20 T40,10 T60,20 T80,5 T100,10" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. How It Works Section -->
+    <section id="how-it-works" class="how-it-works section bg-light">
+        <div class="container fade-in">
+            <div class="section-header">
+                <h2>Simplicity at its core</h2>
+                <p>Getting started with SmartExpense takes less than 2 minutes.</p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-icon-wrapper">
+                        <i data-lucide="plus-circle"></i>
+                    </div>
+                    <div class="step-number"><span>1</span></div>
+                    <h3>Add your expenses</h3>
+                    <p>Securely link your bank accounts or manually add your expenses in seconds.</p>
+                </div>
+                <div class="step-line"></div>
+                <div class="step">
+                    <div class="step-icon-wrapper">
+                        <i data-lucide="layers"></i>
+                    </div>
+                    <div class="step-number"><span>2</span></div>
+                    <h3>Categorize automatically</h3>
+                    <p>Our intelligent system automatically tags and organizes your transactions.</p>
+                </div>
+                <div class="step-line"></div>
+                <div class="step">
+                    <div class="step-icon-wrapper">
+                        <i data-lucide="lightbulb"></i>
+                    </div>
+                    <div class="step-number"><span>3</span></div>
+                    <h3>Get insights & save money</h3>
+                    <p>Review beautiful charts, spot trends, and find new ways to save.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Benefits Section -->
+    <section class="benefits section">
+        <div class="container fade-in">
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="b-icon"><i data-lucide="piggy-bank"></i></div>
+                    <h3>Save more money</h3>
+                    <p>Identify wasteful spending and cut down on subscriptions. Users save an average of 15% in their first month.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="b-icon"><i data-lucide="brain"></i></div>
+                    <h3>Understand spending habits</h3>
+                    <p>See exactly where your money leaks are, analyze detailed categories, and gain financial clarity.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="b-icon"><i data-lucide="award"></i></div>
+                    <h3>Achieve financial goals</h3>
+                    <p>Whether it's buying a house, going on vacation, or retiring early, we help map out the path.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Testimonials Section -->
+    <section class="testimonials section bg-light">
+        <div class="container fade-in">
+            <div class="section-header">
+                <h2>Loved by thousands</h2>
+                <p>Don't just take our word for it. See what our users have to say about their financial journey.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"This app completely changed how I look at my money. The auto-categorization is magic, and the UI is absolutely gorgeous. Highly recommend!"</p>
+                    <div class="t-author">
+                        <img src="https://i.pravatar.cc/100?img=5" alt="Sarah J.">
+                        <div>
+                            <h4>Sarah Jenkins</h4>
+                            <span>Freelance Designer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"I've tried Mint, YNAB, and EveryDollar. SmartExpense feels like the modern, fast, and intelligent successor to all of them."</p>
+                    <div class="t-author">
+                        <img src="https://i.pravatar.cc/100?img=11" alt="Mark T.">
+                        <div>
+                            <h4>Mark Thompson</h4>
+                            <span>Software Engineer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"The smart insights helped me identify $120/month in subscriptions I wasn't even using. It literally paid for itself on day 1."</p>
+                    <div class="t-author">
+                        <img src="https://i.pravatar.cc/100?img=9" alt="Elena R.">
+                        <div>
+                            <h4>Elena Rodriguez</h4>
+                            <span>Small Business Owner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Pricing Section -->
+    <section id="pricing" class="pricing section">
+        <div class="container fade-in">
+            <div class="section-header">
+                <h2>Simple, transparent pricing</h2>
+                <p>Choose the plan that's right for your financial journey.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Free Plan</h3>
+                    <div class="price"><span>$</span>0<span>/mo</span></div>
+                    <p>Perfect for manual tracking</p>
+                    <ul class="feature-list">
+                        <li><i data-lucide="check"></i> Manual expense tracking</li>
+                        <li><i data-lucide="check"></i> Multi-device sync</li>
+                        <li><i data-lucide="check"></i> Monthly spending graphs</li>
+                        <li class="disabled"><i data-lucide="minus"></i> Bank connections</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-block">Get Started</a>
+                </div>
+                <div class="price-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3>Pro Plan</h3>
+                    <div class="price"><span>$</span>8<span>/mo</span></div>
+                    <p>Everything you need for wealth control</p>
+                    <ul class="feature-list">
+                        <li><i data-lucide="check"></i> <strong>Unlimited bank connections</strong></li>
+                        <li><i data-lucide="check"></i> Auto-categorization</li>
+                        <li><i data-lucide="check"></i> Smart AI insights</li>
+                        <li><i data-lucide="check"></i> Custom budget alerts</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-block">Start 14-Day Free Trial</a>
+                </div>
+                <div class="price-card">
+                    <h3>Premium Plan</h3>
+                    <div class="price"><span>$</span>15<span>/mo</span></div>
+                    <p>For advanced financial planning</p>
+                    <ul class="feature-list">
+                        <li><i data-lucide="check"></i> Everything in Pro</li>
+                        <li><i data-lucide="check"></i> Unlimited custom categories</li>
+                        <li><i data-lucide="check"></i> Export data (CSV/PDF)</li>
+                        <li><i data-lucide="check"></i> Priority 24/7 support</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-block">Choose Premium</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Call to Action Section -->
+    <section class="cta section">
+        <div class="container fade-in">
+            <div class="cta-container">
+                <h2>Start Managing Your Money Smarter Today</h2>
+                <p>Join over 10,000 users who are already taking control of their financial future. Quick setup, no strings attached.</p>
+                <div class="cta-actions">
+                    <a href="#" class="btn btn-primary btn-lg">Get Started for Free</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Footer -->
+    <footer id="contact" class="footer border-top">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <i data-lucide="wallet"></i>
+                        <span>SmartExpense</span>
+                    </a>
+                    <p>Empowering you to make better financial decisions, every single day.</p>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#">Security</a>
+                    <a href="#">Updates</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SmartExpense Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
